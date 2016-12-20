@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="http://localhost/Project157/styles.css" rel="stylesheet">
+	<title>Add New Movie</title>
+
+<style>
+#moviedescription{
+	width: 700px;
+	height: 50px;
+}
+
+
+</style>
+</head>
+<body>
+
+<center> New Movie </center>
+
+<button> <a href = "http://localhost/Project157/movieDatabase.php"> Go Back </a></button>
+<center>
+<form action= "addmovie.php" method= "POST">
+	<section>
+		<p>
+			<input id = "moviename" placeholder="Enter movie name" type="text" name="movieName">
+			&nbsp;&nbsp;
+			<input id = "moviegenre" placeholder="Enter genre" type="text" name="moviegenre">
+			&nbsp;&nbsp;
+			<input id = "movieyear" placeholder="Enter year" type="text" name="movieyear">
+			&nbsp;&nbsp;
+			<input id = "movielocation" placeholder="Enter location" type="text" name="movielocation">
+		</p>
+		<p>
+			<input id = "moviedescription" placeholder="Enter description" type = "myTextArea" name="moviedescription">
+		</p>
+
+		<hr>
+		<label> Actors List </label>
+		<p>
+			<input id = "oneactor" placeholder="Enter name" type="text" name="oneactor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "oneactorgender" name="oneactorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>	
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "oneactorrole" placeholder="Enter role" type="text" name="oneactorrole">
+		</p>
+
+		<p>
+			<input id = "twoactor" placeholder="Enter name" type="text" name="twoactor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "twoactorgender" name="twoactorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>	
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "twoactorrole" placeholder="Enter role" type="text" name="twoactorrole">
+		</p>
+
+		<p>
+			<input id = "threeactor" placeholder="Enter name" type="text" name="threeactor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "threeactorgender" name="threeactorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>	
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "threeactorrole" placeholder="Enter role" type="text" name="threeactorrole">
+		</p>
+
+		<p>
+			<input id = "fouractor" placeholder="Enter name" type="text" name="fouractor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<select id = "fouractorgender" name="fouractorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "fouractorrole" placeholder="Enter role" type="text" name="fouractorrole">
+		</p>
+
+		<p>
+			<input id = "fiveactor" placeholder="Enter name" type="text" name="fiveactor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "fiveactorgender" name="fiveactorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>	
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "fiveactorrole" placeholder="Enter role" type="text" name="fiveactorrole">
+		</p>
+
+		<p>
+			<input id = "sixactor" placeholder="Enter name" type="text" name="sixactor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "sixactorgender" name="sixactorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>	
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "sixactorrole" placeholder="Enter role" type="text" name="sixactorrole">
+		</p>
+
+		<p>
+			<input id = "sevenactor" placeholder="Enter name" type="text" name="sevenactor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "sevenactorgender" name="sevenactorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "sevenactorrole" placeholder="Enter role" type="text" name="sevenactorrole">
+		</p>
+
+		<p>
+			<input id = "eightactor" placeholder="Enter name" type="text" name="eightactor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+			<select id = "eightactorgender" name="eightactorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "eightactorrole" placeholder="Enter role" type="text" name="eightactorrole">
+		</p>
+
+		<p>
+			<input id = "nineactor" placeholder="Enter name" type="text" name="nineactor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "nineactorgender" name="nineactorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "nineactorrole" placeholder="Enter role" type="text" name="nineactorrole">
+		</p>
+
+		<p>
+			<input id = "tenactor" placeholder="Enter name" type="text" name="tenactor">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "tenactorgender" name="tenactorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>	
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "tenactorrole" placeholder="Enter role" type="text" name="tenactorrole">
+		</p>
+
+		<hr>
+			<label> Director List </label>
+
+		<p>
+			<input id = "onedirector" placeholder="Enter name" type="text" name="onedirector">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "onedirectorgender" name="onedirectorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>	
+
+		</p>
+
+		<p>
+			<input id = "twodirector" placeholder="Enter name" type="text" name="twodirector">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id = "twodirectorgender" name="twodirectorgender">
+				<option value = "m">m</option>
+				<option value = "f">f</option>
+			</select>	
+		</p>
+
+		<hr>
+		<label> Languages Available </label>
+		<p>
+			<input id = "firstlanguage" placeholder="Enter language" type="text" name="firstlanguage">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "secondlanguage" placeholder="Enter language" type="text" name="secondlanguage">
+		</p>	
+
+		<hr>
+		<label> Studio </label>
+		<p>
+			<input id = "studioname" placeholder="Enter studio name" type="text" name="studioname">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id = "studioaddress" placeholder="Enter address" type="text" name="studioaddress">
+		</p>
+
+		<p>
+			<input type = "submit" class="button" value= "Submit" name="submit">
+		</p>
+
+	</section>
+</form>
+	<button> <a href = "http://localhost/Project157/movieDatabase.php"> Go Back </a></button>
+
+
+</center>
+
+</body>
+</html>
